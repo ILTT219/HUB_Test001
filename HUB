@@ -1,0 +1,715 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Menu = Instance.new("ScreenGui")
+local HUB = Instance.new("Frame")
+local HUB_Main = Instance.new("Frame")
+local Top_bar = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local fix_correr = Instance.new("Frame")
+local Tittle = Instance.new("TextLabel")
+local UIPadding = Instance.new("UIPadding")
+local UICorner_2 = Instance.new("UICorner")
+local Main_tool = Instance.new("Frame")
+local Information = Instance.new("ScrollingFrame")
+local UIPadding_2 = Instance.new("UIPadding")
+local UIListLayout = Instance.new("UIListLayout")
+local cre = Instance.new("TextLabel")
+local player_name = Instance.new("TextLabel")
+local Level = Instance.new("TextLabel")
+local tool_bar = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local Hide = Instance.new("Frame")
+local Hide2 = Instance.new("Frame")
+local Line = Instance.new("Frame")
+local Tool_button = Instance.new("ScrollingFrame")
+local UIPadding_3 = Instance.new("UIPadding")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local Information_2 = Instance.new("TextButton")
+local Main = Instance.new("TextButton")
+local Stat = Instance.new("TextButton")
+local Item = Instance.new("TextButton")
+local Raid = Instance.new("TextButton")
+local Race = Instance.new("TextButton")
+local Shop = Instance.new("TextButton")
+local Esp = Instance.new("TextButton")
+local Popup = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local popup_button = Instance.new("ImageButton")
+local UICorner_5 = Instance.new("UICorner")
+local Key_HUB = Instance.new("Frame")
+local Buttons = Instance.new("Frame")
+local Check = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local Check_Key = Instance.new("TextLabel")
+local check_button = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Get = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local Get_Key = Instance.new("TextLabel")
+local Getkey_button = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local Discord = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
+local Discord_NTT = Instance.new("TextLabel")
+local dis_button = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local Tittle_2 = Instance.new("Frame")
+local UICorner_12 = Instance.new("UICorner")
+local NTT_HUB = Instance.new("TextLabel")
+local check = Instance.new("TextBox")
+
+--Properties:
+
+Menu.Name = "Menu"
+Menu.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Menu.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Menu.ResetOnSpawn = false
+
+HUB.Name = "HUB"
+HUB.Parent = Menu
+HUB.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+HUB.BackgroundTransparency = 1.000
+HUB.BorderColor3 = Color3.fromRGB(30, 30, 30)
+HUB.BorderSizePixel = 0
+HUB.Position = UDim2.new(0, 0, -6.13418649e-08, 0)
+HUB.Size = UDim2.new(1.02250004, 0, 1.05626333, 0)
+
+HUB_Main.Name = "HUB_Main"
+HUB_Main.Parent = HUB
+HUB_Main.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+HUB_Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HUB_Main.BorderSizePixel = 0
+HUB_Main.Position = UDim2.new(0.138141811, 0, 0.128643215, 0)
+HUB_Main.Size = UDim2.new(0.723716378, 0, 0.741708517, 0)
+
+Top_bar.Name = "Top_bar"
+Top_bar.Parent = HUB_Main
+Top_bar.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Top_bar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Top_bar.BorderSizePixel = 0
+Top_bar.Size = UDim2.new(1, 0, 0.0899999961, 0)
+
+UICorner.CornerRadius = UDim.new(0.300000012, 0)
+UICorner.Parent = Top_bar
+
+fix_correr.Name = "fix_correr"
+fix_correr.Parent = Top_bar
+fix_correr.AnchorPoint = Vector2.new(0, 1)
+fix_correr.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+fix_correr.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fix_correr.BorderSizePixel = 0
+fix_correr.Position = UDim2.new(0, 0, 1, 0)
+fix_correr.Size = UDim2.new(1, 0, 0.5, 0)
+
+Tittle.Name = "Tittle"
+Tittle.Parent = Top_bar
+Tittle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tittle.BackgroundTransparency = 1.000
+Tittle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tittle.BorderSizePixel = 0
+Tittle.Size = UDim2.new(0.5, 0, 1, 0)
+Tittle.Font = Enum.Font.Unknown
+Tittle.Text = "T219 HUB"
+Tittle.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tittle.TextScaled = true
+Tittle.TextSize = 14.000
+Tittle.TextWrapped = true
+Tittle.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding.Parent = Tittle
+UIPadding.PaddingLeft = UDim.new(0, 10)
+
+UICorner_2.CornerRadius = UDim.new(0.0299999993, 0)
+UICorner_2.Parent = HUB_Main
+
+Main_tool.Name = "Main_tool"
+Main_tool.Parent = HUB_Main
+Main_tool.AnchorPoint = Vector2.new(1, 0)
+Main_tool.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main_tool.BackgroundTransparency = 1.000
+Main_tool.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main_tool.BorderSizePixel = 0
+Main_tool.Position = UDim2.new(0.994916558, 0, 0.0985065401, 0)
+Main_tool.Size = UDim2.new(0.735660434, 0, 0.893168986, 0)
+
+Information.Name = "Information"
+Information.Parent = Main_tool
+Information.Active = true
+Information.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Information.BackgroundTransparency = 1.000
+Information.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Information.BorderSizePixel = 0
+Information.Size = UDim2.new(1, 0, 1, 0)
+Information.CanvasSize = UDim2.new(0, 0, 0, 0)
+Information.ScrollBarThickness = 0
+
+UIPadding_2.Parent = Information
+UIPadding_2.PaddingLeft = UDim.new(0, 1)
+UIPadding_2.PaddingRight = UDim.new(0, 1)
+UIPadding_2.PaddingTop = UDim.new(0, 1)
+
+UIListLayout.Parent = Information
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 6)
+
+cre.Name = "cre"
+cre.Parent = Information
+cre.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+cre.BackgroundTransparency = 1.000
+cre.BorderColor3 = Color3.fromRGB(0, 0, 0)
+cre.BorderSizePixel = 0
+cre.Size = UDim2.new(1, 0, 0.129999995, 0)
+cre.Font = Enum.Font.Unknown
+cre.Text = "Script by T219"
+cre.TextColor3 = Color3.fromRGB(255, 255, 255)
+cre.TextScaled = true
+cre.TextSize = 14.000
+cre.TextWrapped = true
+
+player_name.Name = "player_name"
+player_name.Parent = Information
+player_name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+player_name.BackgroundTransparency = 1.000
+player_name.BorderColor3 = Color3.fromRGB(0, 0, 0)
+player_name.BorderSizePixel = 0
+player_name.Size = UDim2.new(1, 0, 0.129999995, 0)
+player_name.Font = Enum.Font.SourceSans
+player_name.Text = "Name player"
+player_name.TextColor3 = Color3.fromRGB(255, 255, 255)
+player_name.TextScaled = true
+player_name.TextSize = 14.000
+player_name.TextWrapped = true
+player_name.TextXAlignment = Enum.TextXAlignment.Left
+
+Level.Name = "Level"
+Level.Parent = Information
+Level.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Level.BackgroundTransparency = 1.000
+Level.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Level.BorderSizePixel = 0
+Level.Size = UDim2.new(1, 0, 0.129999995, 0)
+Level.Font = Enum.Font.SourceSans
+Level.Text = "Level"
+Level.TextColor3 = Color3.fromRGB(255, 255, 255)
+Level.TextScaled = true
+Level.TextSize = 14.000
+Level.TextWrapped = true
+Level.TextXAlignment = Enum.TextXAlignment.Left
+
+tool_bar.Name = "tool_bar"
+tool_bar.Parent = HUB_Main
+tool_bar.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+tool_bar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+tool_bar.BorderSizePixel = 0
+tool_bar.Position = UDim2.new(0, 0, 0.0901820436, 0)
+tool_bar.Size = UDim2.new(0.254172653, 0, 0.909817934, 0)
+
+UICorner_3.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_3.Parent = tool_bar
+
+Hide.Name = "Hide"
+Hide.Parent = tool_bar
+Hide.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Hide.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Hide.BorderSizePixel = 0
+Hide.Size = UDim2.new(1, 0, 0.0304987617, 0)
+
+Hide2.Name = "Hide2"
+Hide2.Parent = tool_bar
+Hide2.AnchorPoint = Vector2.new(1, 0)
+Hide2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Hide2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Hide2.BorderSizePixel = 0
+Hide2.Position = UDim2.new(1, 0, 0, 0)
+Hide2.Size = UDim2.new(0.0666666701, 0, 1, 0)
+
+Line.Name = "Line"
+Line.Parent = tool_bar
+Line.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line.BorderSizePixel = 0
+Line.Position = UDim2.new(1, 0, 0, 0)
+Line.Size = UDim2.new(0.00333333341, 0, 1, 0)
+
+Tool_button.Name = "Tool_button"
+Tool_button.Parent = tool_bar
+Tool_button.Active = true
+Tool_button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tool_button.BackgroundTransparency = 1.000
+Tool_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tool_button.BorderSizePixel = 0
+Tool_button.Size = UDim2.new(1, 0, 1, 0)
+Tool_button.CanvasSize = UDim2.new(0, 0, 0, 0)
+Tool_button.ScrollBarThickness = 0
+
+UIPadding_3.Parent = Tool_button
+UIPadding_3.PaddingBottom = UDim.new(0, 8)
+UIPadding_3.PaddingLeft = UDim.new(0, 2)
+UIPadding_3.PaddingTop = UDim.new(0, 8)
+
+UIListLayout_2.Parent = Tool_button
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_2.Padding = UDim.new(0, 10)
+
+Information_2.Name = "Information"
+Information_2.Parent = Tool_button
+Information_2.Active = false
+Information_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Information_2.BackgroundTransparency = 0.900
+Information_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Information_2.BorderSizePixel = 0
+Information_2.Position = UDim2.new(0, 0, 0.356835514, 0)
+Information_2.Selectable = false
+Information_2.Size = UDim2.new(1, 0, 0.10674566, 0)
+Information_2.Font = Enum.Font.Unknown
+Information_2.Text = "Information"
+Information_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Information_2.TextScaled = true
+Information_2.TextSize = 14.000
+Information_2.TextWrapped = true
+Information_2.TextXAlignment = Enum.TextXAlignment.Left
+
+Main.Name = "Main"
+Main.Parent = Tool_button
+Main.Active = false
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BackgroundTransparency = 0.900
+Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main.BorderSizePixel = 0
+Main.Selectable = false
+Main.Size = UDim2.new(1, 0, 0.10674566, 0)
+Main.Font = Enum.Font.Unknown
+Main.Text = "Main"
+Main.TextColor3 = Color3.fromRGB(255, 255, 255)
+Main.TextScaled = true
+Main.TextSize = 14.000
+Main.TextWrapped = true
+Main.TextXAlignment = Enum.TextXAlignment.Left
+
+Stat.Name = "Stat"
+Stat.Parent = Tool_button
+Stat.Active = false
+Stat.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stat.BackgroundTransparency = 0.900
+Stat.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Stat.BorderSizePixel = 0
+Stat.Position = UDim2.new(0, 0, 0.118945166, 0)
+Stat.Selectable = false
+Stat.Size = UDim2.new(1, 0, 0.10674566, 0)
+Stat.Font = Enum.Font.Unknown
+Stat.Text = "Stat"
+Stat.TextColor3 = Color3.fromRGB(255, 255, 255)
+Stat.TextScaled = true
+Stat.TextSize = 14.000
+Stat.TextWrapped = true
+Stat.TextXAlignment = Enum.TextXAlignment.Left
+
+Item.Name = "Item"
+Item.Parent = Tool_button
+Item.Active = false
+Item.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Item.BackgroundTransparency = 0.900
+Item.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Item.BorderSizePixel = 0
+Item.Position = UDim2.new(0, 0, 0.237890333, 0)
+Item.Selectable = false
+Item.Size = UDim2.new(1, 0, 0.10674566, 0)
+Item.Font = Enum.Font.Unknown
+Item.Text = "Item"
+Item.TextColor3 = Color3.fromRGB(255, 255, 255)
+Item.TextScaled = true
+Item.TextSize = 14.000
+Item.TextWrapped = true
+Item.TextXAlignment = Enum.TextXAlignment.Left
+
+Raid.Name = "Raid"
+Raid.Parent = Tool_button
+Raid.Active = false
+Raid.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Raid.BackgroundTransparency = 0.900
+Raid.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Raid.BorderSizePixel = 0
+Raid.Position = UDim2.new(0, 0, 0.475780666, 0)
+Raid.Selectable = false
+Raid.Size = UDim2.new(1, 0, 0.10674566, 0)
+Raid.Font = Enum.Font.Unknown
+Raid.Text = "Raid"
+Raid.TextColor3 = Color3.fromRGB(255, 255, 255)
+Raid.TextScaled = true
+Raid.TextSize = 14.000
+Raid.TextWrapped = true
+Raid.TextXAlignment = Enum.TextXAlignment.Left
+
+Race.Name = "Race"
+Race.Parent = Tool_button
+Race.Active = false
+Race.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Race.BackgroundTransparency = 0.900
+Race.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Race.BorderSizePixel = 0
+Race.Position = UDim2.new(0, 0, 0.594725847, 0)
+Race.Selectable = false
+Race.Size = UDim2.new(1, 0, 0.10674566, 0)
+Race.Font = Enum.Font.Unknown
+Race.Text = "Race"
+Race.TextColor3 = Color3.fromRGB(255, 255, 255)
+Race.TextScaled = true
+Race.TextSize = 14.000
+Race.TextWrapped = true
+Race.TextXAlignment = Enum.TextXAlignment.Left
+
+Shop.Name = "Shop"
+Shop.Parent = Tool_button
+Shop.Active = false
+Shop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shop.BackgroundTransparency = 0.900
+Shop.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Shop.BorderSizePixel = 0
+Shop.Position = UDim2.new(0, 0, 0.713671029, 0)
+Shop.Selectable = false
+Shop.Size = UDim2.new(1, 0, 0.10674566, 0)
+Shop.Font = Enum.Font.Unknown
+Shop.Text = "Shop"
+Shop.TextColor3 = Color3.fromRGB(255, 255, 255)
+Shop.TextScaled = true
+Shop.TextSize = 14.000
+Shop.TextWrapped = true
+Shop.TextXAlignment = Enum.TextXAlignment.Left
+
+Esp.Name = "Esp"
+Esp.Parent = Tool_button
+Esp.Active = false
+Esp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Esp.BackgroundTransparency = 0.900
+Esp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Esp.BorderSizePixel = 0
+Esp.Selectable = false
+Esp.Size = UDim2.new(1, 0, 0.10674566, 0)
+Esp.Font = Enum.Font.Unknown
+Esp.Text = "Esp"
+Esp.TextColor3 = Color3.fromRGB(255, 255, 255)
+Esp.TextScaled = true
+Esp.TextSize = 14.000
+Esp.TextWrapped = true
+Esp.TextXAlignment = Enum.TextXAlignment.Left
+
+Popup.Name = "Popup"
+Popup.Parent = HUB
+Popup.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Popup.BackgroundTransparency = 1.000
+Popup.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Popup.BorderSizePixel = 0
+Popup.Position = UDim2.new(0.0770171136, 0, 0.077386938, 0)
+Popup.Size = UDim2.new(0, 100, 0, 100)
+
+UICorner_4.CornerRadius = UDim.new(0.25, 0)
+UICorner_4.Parent = Popup
+
+popup_button.Name = "popup_button"
+popup_button.Parent = Popup
+popup_button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+popup_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+popup_button.BorderSizePixel = 0
+popup_button.Size = UDim2.new(1, 0, 1, 0)
+popup_button.Image = "rbxassetid://16012058334"
+
+UICorner_5.CornerRadius = UDim.new(0.25, 0)
+UICorner_5.Parent = popup_button
+
+Key_HUB.Name = "Key_HUB"
+Key_HUB.Parent = Menu
+Key_HUB.AnchorPoint = Vector2.new(0.5, 0.5)
+Key_HUB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Key_HUB.BackgroundTransparency = 1.000
+Key_HUB.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Key_HUB.BorderSizePixel = 0
+Key_HUB.Position = UDim2.new(0.5, 0, 0.5, 0)
+Key_HUB.Size = UDim2.new(1, 0, 1, 0)
+Key_HUB.Visible = false
+
+Buttons.Name = "Buttons"
+Buttons.Parent = Key_HUB
+Buttons.AnchorPoint = Vector2.new(0.5, 0.5)
+Buttons.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Buttons.BackgroundTransparency = 1.000
+Buttons.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Buttons.BorderSizePixel = 0
+Buttons.Position = UDim2.new(0.5, 0, 0.76258707, 0)
+Buttons.Size = UDim2.new(0.295925677, 0, 0.253959864, 0)
+
+Check.Name = "Check"
+Check.Parent = Buttons
+Check.AnchorPoint = Vector2.new(0.5, 0.5)
+Check.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Check.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Check.BorderSizePixel = 0
+Check.Position = UDim2.new(0.499999881, 0, 0.142077431, 0)
+Check.Size = UDim2.new(0.999999523, 0, 0.290287524, 0)
+
+UICorner_6.CornerRadius = UDim.new(0.25, 0)
+UICorner_6.Parent = Check
+
+Check_Key.Name = "Check_Key"
+Check_Key.Parent = Check
+Check_Key.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Check_Key.BackgroundTransparency = 1.000
+Check_Key.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Check_Key.BorderSizePixel = 0
+Check_Key.Position = UDim2.new(0, 0, 0.199249089, 0)
+Check_Key.Size = UDim2.new(1, 0, 0.617044926, 0)
+Check_Key.Font = Enum.Font.Unknown
+Check_Key.Text = "Check Key"
+Check_Key.TextColor3 = Color3.fromRGB(255, 255, 255)
+Check_Key.TextScaled = true
+Check_Key.TextSize = 14.000
+Check_Key.TextWrapped = true
+
+check_button.Name = "check_button"
+check_button.Parent = Check
+check_button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+check_button.BackgroundTransparency = 1.000
+check_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+check_button.BorderSizePixel = 0
+check_button.Size = UDim2.new(0.999997377, 0, 1.02142966, 0)
+check_button.Font = Enum.Font.SourceSans
+check_button.Text = ""
+check_button.TextColor3 = Color3.fromRGB(0, 0, 0)
+check_button.TextSize = 14.000
+
+UICorner_7.CornerRadius = UDim.new(0.25, 0)
+UICorner_7.Parent = check_button
+
+Get.Name = "Get"
+Get.Parent = Buttons
+Get.AnchorPoint = Vector2.new(0.5, 0.5)
+Get.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Get.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Get.BorderSizePixel = 0
+Get.Position = UDim2.new(0.499999881, 0, 0.496157736, 0)
+Get.Size = UDim2.new(0.999999523, 0, 0.290287524, 0)
+
+UICorner_8.CornerRadius = UDim.new(0.25, 0)
+UICorner_8.Parent = Get
+
+Get_Key.Name = "Get_Key"
+Get_Key.Parent = Get
+Get_Key.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Get_Key.BackgroundTransparency = 1.000
+Get_Key.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Get_Key.BorderSizePixel = 0
+Get_Key.Position = UDim2.new(0, 0, 0.199249089, 0)
+Get_Key.Size = UDim2.new(1, 0, 0.617044926, 0)
+Get_Key.Font = Enum.Font.Unknown
+Get_Key.Text = "Get Key"
+Get_Key.TextColor3 = Color3.fromRGB(255, 255, 255)
+Get_Key.TextScaled = true
+Get_Key.TextSize = 14.000
+Get_Key.TextWrapped = true
+
+Getkey_button.Name = "Getkey_button"
+Getkey_button.Parent = Get
+Getkey_button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Getkey_button.BackgroundTransparency = 1.000
+Getkey_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Getkey_button.BorderSizePixel = 0
+Getkey_button.Position = UDim2.new(-1.29311431e-07, 0, 0, 0)
+Getkey_button.Size = UDim2.new(0, 471, 0, 50)
+Getkey_button.Font = Enum.Font.SourceSans
+Getkey_button.Text = ""
+Getkey_button.TextColor3 = Color3.fromRGB(0, 0, 0)
+Getkey_button.TextSize = 14.000
+
+UICorner_9.CornerRadius = UDim.new(0.25, 0)
+UICorner_9.Parent = Getkey_button
+
+Discord.Name = "Discord"
+Discord.Parent = Buttons
+Discord.AnchorPoint = Vector2.new(0.5, 0.5)
+Discord.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Discord.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Discord.BorderSizePixel = 0
+Discord.Position = UDim2.new(0.497934341, 0, 0.85430795, 0)
+Discord.Size = UDim2.new(0.999999523, 0, 0.290287524, 0)
+
+UICorner_10.CornerRadius = UDim.new(0.25, 0)
+UICorner_10.Parent = Discord
+
+Discord_NTT.Name = "Discord_NTT"
+Discord_NTT.Parent = Discord
+Discord_NTT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Discord_NTT.BackgroundTransparency = 1.000
+Discord_NTT.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Discord_NTT.BorderSizePixel = 0
+Discord_NTT.Position = UDim2.new(0, 0, 0.199249089, 0)
+Discord_NTT.Size = UDim2.new(1, 0, 0.617044926, 0)
+Discord_NTT.Font = Enum.Font.Unknown
+Discord_NTT.Text = "Discord NTT"
+Discord_NTT.TextColor3 = Color3.fromRGB(255, 255, 255)
+Discord_NTT.TextScaled = true
+Discord_NTT.TextSize = 14.000
+Discord_NTT.TextWrapped = true
+
+dis_button.Name = "dis_button"
+dis_button.Parent = Discord
+dis_button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+dis_button.BackgroundTransparency = 1.000
+dis_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+dis_button.BorderSizePixel = 0
+dis_button.Size = UDim2.new(0, 472, 0, 50)
+dis_button.Font = Enum.Font.SourceSans
+dis_button.Text = ""
+dis_button.TextColor3 = Color3.fromRGB(0, 0, 0)
+dis_button.TextSize = 14.000
+
+UICorner_11.CornerRadius = UDim.new(0.25, 0)
+UICorner_11.Parent = dis_button
+
+Tittle_2.Name = "Tittle"
+Tittle_2.Parent = Key_HUB
+Tittle_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Tittle_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Tittle_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tittle_2.BorderSizePixel = 0
+Tittle_2.Position = UDim2.new(0.49999997, 0, 0.303970426, 0)
+Tittle_2.Size = UDim2.new(0.483787477, 0, 0.387964785, 0)
+
+UICorner_12.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_12.Parent = Tittle_2
+
+NTT_HUB.Name = "NTT_HUB"
+NTT_HUB.Parent = Tittle_2
+NTT_HUB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NTT_HUB.BackgroundTransparency = 1.000
+NTT_HUB.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NTT_HUB.BorderSizePixel = 0
+NTT_HUB.Position = UDim2.new(0.106186844, 0, 0.0904836208, 0)
+NTT_HUB.Size = UDim2.new(0.787136614, 0, 0.321825117, 0)
+NTT_HUB.Font = Enum.Font.Unknown
+NTT_HUB.Text = "NTT HUB"
+NTT_HUB.TextColor3 = Color3.fromRGB(255, 255, 255)
+NTT_HUB.TextScaled = true
+NTT_HUB.TextSize = 14.000
+NTT_HUB.TextWrapped = true
+
+check.Name = "check"
+check.Parent = Tittle_2
+check.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+check.BorderColor3 = Color3.fromRGB(255, 255, 255)
+check.BorderSizePixel = 2
+check.Position = UDim2.new(0.01263454, 0, 0.565012276, 0)
+check.Size = UDim2.new(0.97791934, 0, 0.17279689, 0)
+check.Font = Enum.Font.SourceSans
+check.Text = ""
+check.TextColor3 = Color3.fromRGB(255, 255, 255)
+check.TextSize = 14.000
+
+-- Scripts:
+
+local function PWGK_fake_script() -- player_name.name 
+	local script = Instance.new('LocalScript', player_name)
+
+	local name = game.Players.LocalPlayer.Name
+	local tag = script.Parent
+	tag.Text = "Name Player  "..name
+end
+coroutine.wrap(PWGK_fake_script)()
+local function QDDEKM_fake_script() -- Level.getlevel 
+	local script = Instance.new('LocalScript', Level)
+
+	local level = game.Players.LocalPlayer.Data.Level.Value
+	local main = script.Parent
+	main.Text = "Level  "..level
+end
+coroutine.wrap(QDDEKM_fake_script)()
+local function FHBOT_fake_script() -- Popup.popup_script 
+	local script = Instance.new('LocalScript', Popup)
+
+	local popup_button = script.Parent.popup_button
+	local HUB = script.Parent.Parent.HUB_Main
+	popup_button.MouseEnter:Connect(function()
+		HUB.Visible = not(HUB.Visible)
+	end)
+end
+coroutine.wrap(FHBOT_fake_script)()
+local function GTLAXGP_fake_script() -- Check.ani 
+	local script = Instance.new('LocalScript', Check)
+
+	local Ani_Buttons = script.Parent
+	local function active()
+		Ani_Buttons.BackgroundColor3 = Color3.fromRGB(40,40,40)
+	end
+	local function nonactive()
+		Ani_Buttons.BackgroundColor3 = Color3.fromRGB(30,30,30)
+	end
+	Ani_Buttons.MouseEnter:Connect(active)
+	Ani_Buttons.MouseLeave:Connect(nonactive)
+end
+coroutine.wrap(GTLAXGP_fake_script)()
+local function XROU_fake_script() -- Check.check_key 
+	local script = Instance.new('LocalScript', Check)
+
+	local check = script.Parent.Parent.Parent.Tittle.check.Text
+	local check_button = script.Parent.check_button
+	local HUB = script.Parent.Parent.Parent.Parent.HUB
+	local Key_HUB = script.Parent.Parent.Parent.Parent.Key_HUB
+	local function check_key ()
+		local check = script.Parent.Parent.Parent.Tittle.check.Text
+		if check == "T219" then
+			HUB.Visible = true
+			Key_HUB.Visible = false
+			else
+			script.Parent.Parent.Parent.Tittle.check.Text = "incorrect"
+		end
+	end
+	check_button.MouseButton1Up:Connect(check_key)
+end
+coroutine.wrap(XROU_fake_script)()
+local function LQMBRLQ_fake_script() -- Get.ani 
+	local script = Instance.new('LocalScript', Get)
+
+	local Ani_Buttons = script.Parent
+	local function active()
+		Ani_Buttons.BackgroundColor3 = Color3.fromRGB(40,40,40)
+	end
+	local function nonactive()
+		Ani_Buttons.BackgroundColor3 = Color3.fromRGB(30,30,30)
+	end
+	Ani_Buttons.MouseEnter:Connect(active)
+	Ani_Buttons.MouseLeave:Connect(nonactive)
+end
+coroutine.wrap(LQMBRLQ_fake_script)()
+local function KAIOCXV_fake_script() -- Get.linkgetkey 
+	local script = Instance.new('LocalScript', Get)
+
+	local link = script.Parent.Getkey_button
+	link.MouseButton1Up:Connect(function()
+		setclipboard("T219")
+	end)
+end
+coroutine.wrap(KAIOCXV_fake_script)()
+local function CGQCJLX_fake_script() -- Discord.ani 
+	local script = Instance.new('LocalScript', Discord)
+
+	local Ani_Buttons = script.Parent
+	local function active()
+		Ani_Buttons.BackgroundColor3 = Color3.fromRGB(40,40,40)
+	end
+	local function nonactive()
+		Ani_Buttons.BackgroundColor3 = Color3.fromRGB(30,30,30)
+	end
+	Ani_Buttons.MouseEnter:Connect(active)
+	Ani_Buttons.MouseLeave:Connect(nonactive)
+end
+coroutine.wrap(CGQCJLX_fake_script)()
+local function RDUCSQ_fake_script() -- Discord.link_dis 
+	local script = Instance.new('LocalScript', Discord)
+
+	local link = script.Parent.dis_button
+	link.MouseButton1Up:Connect(function()
+		setclipboard("https://discord.gg/wk2NYaku")
+	end)
+end
+coroutine.wrap(RDUCSQ_fake_script)()
