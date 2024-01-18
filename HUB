@@ -608,33 +608,33 @@ check.TextSize = 14.000
 
 -- Scripts:
 
-local function PWGK_fake_script() -- player_name.name 
+local function CFAWN_fake_script() -- player_name.name 
 	local script = Instance.new('LocalScript', player_name)
 
 	local name = game.Players.LocalPlayer.Name
 	local tag = script.Parent
 	tag.Text = "Name Player  "..name
 end
-coroutine.wrap(PWGK_fake_script)()
-local function QDDEKM_fake_script() -- Level.getlevel 
+coroutine.wrap(CFAWN_fake_script)()
+local function GZZBV_fake_script() -- Level.getlevel 
 	local script = Instance.new('LocalScript', Level)
 
 	local level = game.Players.LocalPlayer.Data.Level.Value
 	local main = script.Parent
 	main.Text = "Level  "..level
 end
-coroutine.wrap(QDDEKM_fake_script)()
-local function FHBOT_fake_script() -- Popup.popup_script 
+coroutine.wrap(GZZBV_fake_script)()
+local function OCGEBAW_fake_script() -- Popup.popup_script 
 	local script = Instance.new('LocalScript', Popup)
 
 	local popup_button = script.Parent.popup_button
 	local HUB = script.Parent.Parent.HUB_Main
-	popup_button.MouseEnter:Connect(function()
+	popup_button.MouseButton1Up:Connect(function()
 		HUB.Visible = not(HUB.Visible)
 	end)
 end
-coroutine.wrap(FHBOT_fake_script)()
-local function GTLAXGP_fake_script() -- Check.ani 
+coroutine.wrap(OCGEBAW_fake_script)()
+local function SBZHRN_fake_script() -- Check.ani 
 	local script = Instance.new('LocalScript', Check)
 
 	local Ani_Buttons = script.Parent
@@ -647,8 +647,8 @@ local function GTLAXGP_fake_script() -- Check.ani
 	Ani_Buttons.MouseEnter:Connect(active)
 	Ani_Buttons.MouseLeave:Connect(nonactive)
 end
-coroutine.wrap(GTLAXGP_fake_script)()
-local function XROU_fake_script() -- Check.check_key 
+coroutine.wrap(SBZHRN_fake_script)()
+local function GKNMOAE_fake_script() -- Check.check_key 
 	local script = Instance.new('LocalScript', Check)
 
 	local check = script.Parent.Parent.Parent.Tittle.check.Text
@@ -666,8 +666,8 @@ local function XROU_fake_script() -- Check.check_key
 	end
 	check_button.MouseButton1Up:Connect(check_key)
 end
-coroutine.wrap(XROU_fake_script)()
-local function LQMBRLQ_fake_script() -- Get.ani 
+coroutine.wrap(GKNMOAE_fake_script)()
+local function AYIIHPB_fake_script() -- Get.ani 
 	local script = Instance.new('LocalScript', Get)
 
 	local Ani_Buttons = script.Parent
@@ -680,8 +680,8 @@ local function LQMBRLQ_fake_script() -- Get.ani
 	Ani_Buttons.MouseEnter:Connect(active)
 	Ani_Buttons.MouseLeave:Connect(nonactive)
 end
-coroutine.wrap(LQMBRLQ_fake_script)()
-local function KAIOCXV_fake_script() -- Get.linkgetkey 
+coroutine.wrap(AYIIHPB_fake_script)()
+local function ONEP_fake_script() -- Get.linkgetkey 
 	local script = Instance.new('LocalScript', Get)
 
 	local link = script.Parent.Getkey_button
@@ -689,8 +689,8 @@ local function KAIOCXV_fake_script() -- Get.linkgetkey
 		setclipboard("T219")
 	end)
 end
-coroutine.wrap(KAIOCXV_fake_script)()
-local function CGQCJLX_fake_script() -- Discord.ani 
+coroutine.wrap(ONEP_fake_script)()
+local function ILDA_fake_script() -- Discord.ani 
 	local script = Instance.new('LocalScript', Discord)
 
 	local Ani_Buttons = script.Parent
@@ -703,8 +703,8 @@ local function CGQCJLX_fake_script() -- Discord.ani
 	Ani_Buttons.MouseEnter:Connect(active)
 	Ani_Buttons.MouseLeave:Connect(nonactive)
 end
-coroutine.wrap(CGQCJLX_fake_script)()
-local function RDUCSQ_fake_script() -- Discord.link_dis 
+coroutine.wrap(ILDA_fake_script)()
+local function CDRT_fake_script() -- Discord.link_dis 
 	local script = Instance.new('LocalScript', Discord)
 
 	local link = script.Parent.dis_button
@@ -712,4 +712,4 @@ local function RDUCSQ_fake_script() -- Discord.link_dis
 		setclipboard("https://discord.gg/wk2NYaku")
 	end)
 end
-coroutine.wrap(RDUCSQ_fake_script)()
+coroutine.wrap(CDRT_fake_script)()
